@@ -1,0 +1,22 @@
+@charset "utf-8";
+.txtBODY{
+	color: #E6E6E6;
+}
+.txtCYAN{
+	color:#00FFDE;
+}
+.txtHPINK{
+	color:#FF19D5;
+}
+.txtORANGE{
+	color:#FF900D;
+}
+.txtRED{
+	color:red;
+}
+.txtBLUE{
+	color: #0200FF;
+}
+.txtPURPLE{
+	color:#B400FF;
+}

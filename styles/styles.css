@@ -1,0 +1,315 @@
+/*ACCENT COLORS:
+	Lime green: #14F600,20,246,0
+	Hot pink: #FF19D5, 255,25,213
+	Blue: #0200FF, 2,0 ,255
+	Purple: #B400FF,180,0,255
+	Orange: #FF900D,255,144,13;
+	Cyan: #00FFDE 0,255,222;
+*/
+iframe{
+	width: 700px;
+	height:700px;
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	border: 4px dashed;
+ 
+}
+
+.owlNav{
+display:inline;
+cursor: pointer;	
+}
+.owlNav:hover{
+color: rgb(20, 246, 0);
+text-shadow: 0 5px 15px rgba(20, 246, 0, .8);
+transition: all 0.2s ease-in-out;
+}
+
+
+body {
+	font-size: 18px;
+	font-family: 'Source Code Pro', monospace;
+	color: #E6E6E6;
+	background-color: #1C1C1C;
+	margin:0;
+}
+header{
+	width: 100%;
+	height: 45px;
+	padding-top: 5px;
+	background-color: #121212;
+}
+
+h1{
+	text-transform: uppercase;
+}
+
+h3{
+	text-transform: uppercase;
+}
+
+a{
+	text-decoration: none;
+	color: #E6E6E6;
+}
+
+form{
+	position: relative;
+	width: 390px;
+	height: 520px;
+	text-transform: uppercase;
+	padding:20px;
+	border: 1px solid  #E6E6E6;
+	margin-left: auto;
+	margin-right: auto;
+}
+form input{
+	
+	text-transform: uppercase;
+	padding: 3px;
+}
+form #submit{
+	border: 0;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 18px;
+	color: #d6d6d6;
+ 	background: rgba(20, 246, 0,.7);
+/* 	box-shadow: 0 5px 15px rgba(20, 246, 0, .8);
+*/ 	padding: 15px 40px;
+ 	text-transform: uppercase;
+ 	transition: all 0.2s ease-in-out;
+}
+form #submit:hover{
+	color: #1C1C1C;
+ 	background: rgb(20, 246, 0);
+ 	box-shadow: 0 5px 15px rgba(20, 246, 0, .8);
+ 	text-transform: uppercase;
+ 	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
+form #fname #lname #email{
+	position: relative;
+	float: left;
+}
+form #concerns{
+	padding: 3px;
+	width: 350px;
+	height: 150px;
+	text-align: left;
+}
+
+.toTop{
+	font-size: 36px;
+	color: #E6E6E6;
+	text-decoration:none;
+	float: right;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 3px solid #E6E6E6;
+}
+.toTop:hover{
+	box-shadow: 0 5px 15px rgba(255,255,255, .8);
+	transition: all 0.2s ease-in-out;
+}
+.thumb{
+	float: left;
+	margin-top: 3px;
+	margin-left:5px;
+	width: auto;
+	height: auto;
+	cursor: pointer;
+}
+.navbar{
+	width: auto;
+	height: 34px;
+	font-size: 18px;
+	margin-left:5px;
+	float:left;	
+}
+@media screen and (max-width: 550px) {
+  .navbar ul {
+    float: none;
+    width: 100%;
+  }
+}
+.navbar ul{
+	float:left;
+}
+.navbar li{
+	position: relative;
+	display: inline;
+	margin-right: 30px;
+	text-transform: uppercase;
+}	
+.navbar li:hover{
+	color:#14F600;
+	text-shadow: 0 5px 15px rgba(20, 246, 0, .8);
+	cursor: pointer;
+}
+
+.container{
+	margin: 0;
+	height: 100%;
+	width:100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container h1{
+	font-size: 72px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.container h3{
+	margin-top: -30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.lessonContainer{
+	width: auto;
+	height: 550px;
+	padding: 0px 50px;
+	margin-bottom:50px;
+}
+
+.lessonContent{
+	min-width: 400px;
+	max-width: 50%;
+	float: left;
+	height: 550px;
+	line-height: 36px;
+	margin-left: auto;
+	margin-right: auto;
+}
+i{
+	font-size: 48px;
+}
+
+.cta{
+	position: relative;
+	/*margin-left: 500px;
+	margin-right: 200px;*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 210px;
+}
+
+.why{
+	position: relative;
+	width: 1020px;
+	height:710px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!QUESTIONABLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+*/
+@media screen and (max-width: 900px) {
+  .why h1 {
+    float: left;
+    clear: both;
+  }
+}
+.why h1{
+	text-align: center;
+}
+.htmlwhy{
+	width: 498px;
+	height:598px;
+	border: 1px solid #00FFDE;
+	line-height: 36px;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top:5px;
+	margin-bottom: 5px;
+	float: left;
+}
+@media screen and (max-width: 600px) {
+  .htmlwhy {
+    float: none;
+    clear: both;
+  }
+}
+.htmlwhy p{
+	padding: 15px;
+	font-size: 14px;
+	text-align: left;
+}
+.htmlwhy:hover{
+	box-shadow: 0 5px 15px rgba(0,255,222, .8);
+	transition: all 0.2s ease-in-out;
+}
+.csswhy{
+	width: 498px;
+	height:598px;
+	border: 1px solid #FF19D5;
+	line-height: 36px;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top:5px;
+	margin-bottom: 5px;
+	float: left;
+}
+@media screen and (max-width: 1036px) {
+  .csswhy {
+    float: none;
+    clear: both;
+  }
+}
+.csswhy p{
+	padding: 15px;
+	font-size: 14px;
+	text-align: left;
+}
+.csswhy:hover{
+	box-shadow: 0 5px 15px rgba(255,25,213, .8);
+	transition: all 0.2s ease-in-out;
+}
+.help{
+	position: relative;
+	width: 860px;
+	height:500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.help h1{
+	text-transform: uppercase;
+	text-align: center;
+}
+.help h3{
+	text-transform: uppercase;
+	text-align: center;
+}
+.button{
+	border: 0;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 18px;
+	color: #d6d6d6;
+ 	background: rgba(20, 246, 0,.7);
+/* 	box-shadow: 0 5px 15px rgba(20, 246, 0, .8);
+*/ 	padding: 15px 40px;
+ 	font-weight: normal;
+ 	text-transform: uppercase;
+ 	transition: all 0.2s ease-in-out;
+}
+.button:hover{
+	color: #1C1C1C;
+ 	background: rgb(20, 246, 0);
+ 	box-shadow: 0 5px 15px rgba(20, 246, 0, .8);
+ 	padding: 15px 40px;
+ 	font-weight: normal;
+ 	text-transform: uppercase;
+ 	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
