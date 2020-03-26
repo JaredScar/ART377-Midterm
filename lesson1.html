@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!-- Alana Caporale
+ART377 - MIDTERM SITE-->
+<html>
+<head>
+	<title>The Code Current | LESSONS</title>
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+<link rel="stylesheet" href="styles/colors.css">
+
+</head>
+<body>
+
+<div class="container">
+<header>
+	<a href="index.html" target="_self">
+	<img alt = "LOGO" class="thumb" href="index.html" src="images/logo-header.png">	
+	</a>
+	
+	<div class="navbar">
+		<ul>
+			<a title="HOME" href="index.html" target="_self"><li>home</li></a>
+			<a href="lessons.html" title="LESSONS" target="_self"><li>lessons</li></a>
+			<a href="challenges.html" title="CHALLENGES" target="_self"><li>challenges</li></a>
+			<a href="faq.html" title="FAQ" target="_self"><li>faq</li></a>
+			<a href="contact.html" title="CONTACT" target="_self"><li>contact</li></a>
+		</ul>
+	</div>
+</header>
+	
+	
+<div>
+<h1>.LESSON-<span class="txtCYAN">1</span> &#123;</h1>
+
+<div class="lessonContainer">
+	<div class="lessonContent">
+		<h2>understanding-the-structure:</h2>
+			<p>
+				<ul>
+					<li>HTML code is comprised of a series of characters that live inside angled brackets.</li>
+					<ul>
+						<li>These angled brackets are considered your less-than and greater-than signs!</li>
+					</ul>
+				<br>
+				<li>The official term for this combination of characters is an '<span class="txtORANGE">ELEMENT</span>'!</li>
+				<br>
+				<li>These <span class="txtORANGE">ELEMENTS</span> are typically made up of two '<span class="txtORANGE">TAGS</span>' : </li>
+					<ol>
+						<li>'<span class="txtCYAN">OPEN</span>' tag.</li>
+						<li>'<span class="txtCYAN">CLOSED</span>' tag.</li>
+					</ol>
+				<br>
+				</ul>	
+				<p style="text-align: center">As we get more immersed into the material, you will begin to understand different types of HTML tags and how an internet browser interprets them!</p>
+			</p>
+	</div>
+	<div style="float: right">
+	<img width="auto" height="550" alt="HTML-Breakdown" src="images/lesson1/lesson1-elements.png">
+	</div>
+</div>	
+	<br>
+<div class="lessonContainer" style="height: 1600px">
+	<div class="lessonContent">
+		<h2>getting-started:</h2>
+		<p style="text-align: center">It's important to understand the basic structure of an HTML page before we dive into the design...</p>
+			<p>
+				<ul>
+					<li>An HTML page is structured like a human body! </li>
+					<ul>
+					<li>Although this is not required, it is always a good idea to tell the browser what kind of document it is reading.</li>
+						
+							<li>As we just learned, HTML uses <span class="txtORANGE">TAGS</span>.</li>
+							<li>To tell the browser that it is reading an HTML document, we use the tag :<br>
+								<p style="text-align: center;font-size: 24px;border: 1px solid">&lt;!DOCTYPE <span class="txtORANGE">HTML</span>&gt;</p>
+							</li>
+						
+					</ul>
+					
+				
+				<li>Okay, we told the browser we want to code in HTML... but now what? </li>
+					<ul>
+						<li>Back to our analogy, our whole document is going to contain HTML code.</li>
+							<ul>
+								<li>We want to start with an <span class="txtCYAN"> open HTML tag</span>.<br>
+								<p style="text-align: center;font-size: 24px;border: 1px solid">&lt;<span class="txtORANGE">html</span>&gt;</p></li>
+							</ul>
+						<li>The <span class="txtORANGE">head</span> of a person contains the brain, one of the most essential components of the human body that processes information.</li>
+							<ul>
+								<li>In HTML, we will give our code a 'brain' using the <span class="txtORANGE">head</span> tag! </li>
+								<li>When we start learning about linking CSS files, we will be using this tag more. For now just make sure you have an <span class="txtCYAN"> open head tag</span> and a <span class="txtCYAN"> closed head tag</span>.
+									<p style="text-align: center;font-size: 24px;border: 1px solid">
+										&lt;<span class="txtORANGE">head</span>&gt;
+										&lt;/<span class="txtORANGE">head</span>&gt;
+									</p>
+								</li>
+							</ul>
+						<li>Awesome! Now time for the <span class="txtORANGE">body</span>.</li>
+						<ul>
+								<li>The <span class="txtORANGE">body</span> tag is where all the magic happens. Think of this as where all of the human organs belong: our heart, liver, kidney, etc. </li>
+								<li>Since we are only going over the structure, we will just put an <span class="txtCYAN"> open body tag</span> and a <span class="txtCYAN"> closed body tag</span>.
+									<p style="text-align: center;font-size: 24px;border: 1px solid">
+										&lt;<span class="txtORANGE">body</span>&gt;
+										&lt;/<span class="txtORANGE">body</span>&gt;
+									</p>
+								</li>
+						</ul>
+						<li>We're almost done! We are just missing one tiny detail.</li>
+							<ul>
+								<li>If you noticed, we had opened AND closed both the <span class="txtCYAN"> head</span> and <span class="txtCYAN"> body </span>tags... What about the <span class="txtCYAN"> html</span> tag?</li>
+								<li>Like a human body, our code must have a top and bottom. When we are finished with our <span class="txtCYAN"> head</span> and <span class="txtCYAN"> body </span>, we wrap up our code but inserting a <span class="txtCYAN"> closed html tag</span> on the last line of our document.
+								<p style="text-align: center;font-size: 24px;border: 1px solid">&lt;/<span class="txtORANGE">html</span>&gt;</p>
+								</li>
+							</ul>
+					</ul>
+				</ul>	
+				<p style="text-align: center">Notice how in the figure to right, none of the lines for matching elements are crossed. If you trace your code as you work, your code will remain error-free!</p>
+			</p>
+	</div>
+	
+	<div style="float: right">
+	<img height="100%" alt="HTML-Structure" style="margin-top: 25%" src="images/lesson1/lesson1-structure.png">
+	</div>
+	
+</div>
+	
+<div><iframe src="lesson1-game.html"></iframe></div>
+	<br>
+<div style ="width:700px;height: 150px;margin-left: auto;margin-right: auto">
+	<h1 style="float: left">&#125;</h1>
+	<button class ="button" style="float: right" onClick="location.href='lessons.html'">BACK TO ALL LESSONS</button>
+</div>
+		
+</div>
+<a class="toTop" href="#top">#TOP</a>
+
+</div> <!--end container-->
+
+</body>
+
+</html>
