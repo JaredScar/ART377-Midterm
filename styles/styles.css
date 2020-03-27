@@ -15,7 +15,6 @@ iframe{
 	margin-right: auto;
 	clear: both;
 	border: 4px dashed;
- 
 }
 
 .owlNav{
@@ -27,7 +26,6 @@ color: rgb(20, 246, 0);
 text-shadow: 0 5px 15px rgba(20, 246, 0, .8);
 transition: all 0.2s ease-in-out;
 }
-
 
 body {
 	font-size: 18px;
@@ -42,19 +40,17 @@ header{
 	padding-top: 5px;
 	background-color: #121212;
 }
-
 h1{
 	text-transform: uppercase;
 }
-
 h3{
 	text-transform: uppercase;
 }
-
 a{
 	text-decoration: none;
 	color: #E6E6E6;
 }
+
 
 form{
 	position: relative;
@@ -105,15 +101,18 @@ form #concerns{
 	font-size: 36px;
 	color: #E6E6E6;
 	text-decoration:none;
-	float: right;
-	margin-right: 30px;
-	margin-bottom: 20px;
+	height: 50px;
+	position:absolute;
+    bottom:0;
+    right:0;
+/*	margin-bottom: 20px;*/
 	padding: 10px;
 	border: 3px solid #E6E6E6;
 }
 .toTop:hover{
 	box-shadow: 0 5px 15px rgba(255,255,255, .8);
 	transition: all 0.2s ease-in-out;
+	float: right;
 }
 .thumb{
 	float: left;
@@ -129,12 +128,6 @@ form #concerns{
 	font-size: 18px;
 	margin-left:5px;
 	float:left;	
-}
-@media screen and (max-width: 550px) {
-  .navbar ul {
-    float: none;
-    width: 100%;
-  }
 }
 .navbar ul{
 	float:left;
@@ -155,41 +148,51 @@ form #concerns{
 	margin: 0;
 	height: 100%;
 	width:100%;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	border: 2px solid red;
 }
-
+.centered{
+	width: auto;
+	height:auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column-reverse;
+}
 .container h1{
 	font-size: 72px;
-	text-align: center;
 	text-transform: uppercase;
 }
 
 .container h3{
-	margin-top: -30px;
-	text-align: center;
 	text-transform: uppercase;
 }
 
 .lessonContainer{
-	width: auto;
-	height: 550px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: auto;
 	padding: 0px 50px;
-	margin-bottom:50px;
 }
 
 .lessonContent{
-	min-width: 400px;
-	max-width: 50%;
-	float: left;
-	height: 550px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 50%;
+	height: auto;
 	line-height: 36px;
+	border: 1px solid yellow;
+}
+.lessonContent p{
 	margin-left: auto;
 	margin-right: auto;
-}
-i{
-	font-size: 48px;
 }
 
 .cta{
@@ -202,11 +205,13 @@ i{
 }
 
 .why{
-	position: relative;
-	width: 1020px;
-	height:710px;
-	margin-left: auto;
-	margin-right: auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 70%;
+	height:auto;
+	
 }
 /*
 
@@ -222,6 +227,7 @@ i{
 .why h1{
 	text-align: center;
 }
+
 .htmlwhy{
 	width: 498px;
 	height:598px;
@@ -249,6 +255,7 @@ i{
 	box-shadow: 0 5px 15px rgba(0,255,222, .8);
 	transition: all 0.2s ease-in-out;
 }
+
 .csswhy{
 	width: 498px;
 	height:598px;
@@ -276,6 +283,7 @@ i{
 	box-shadow: 0 5px 15px rgba(255,25,213, .8);
 	transition: all 0.2s ease-in-out;
 }
+
 .help{
 	position: relative;
 	width: 860px;
@@ -291,6 +299,7 @@ i{
 	text-transform: uppercase;
 	text-align: center;
 }
+
 .button{
 	border: 0;
 	font-family: 'Source Code Pro', monospace;
