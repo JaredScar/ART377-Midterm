@@ -8,7 +8,24 @@ ART377 - MIDTERM SITE-->
 <link rel="stylesheet" type="text/css" href="styles/styles.css">
 <link rel="stylesheet" href="styles/colors.css">
 <script src="https://kit.fontawesome.com/9ae88992e0.js" crossorigin="anonymous"></script>
-
+<script>
+		
+	$(function() {
+		$(".toggle").on("click",function(){
+			
+			if($(".item").hasClass("active")){
+			   	$(".item").removeClass("active");
+			   }
+			else{
+				$(".item").addClass("active");
+			}
+			
+		})
+			
+	
+	});	
+	
+	</script>
 </head>
 <body>
 
