@@ -186,6 +186,7 @@ nav a:hover{
 }
 
 
+
 form{
 	position: relative;
 	width: 390px;
@@ -270,7 +271,7 @@ form #concerns{
 .container h1{
 	
 	font-size: 72px;
-	font-size: 4.5vw;
+	font-size: 6vw;
 	text-transform: uppercase;
 }
 
@@ -291,15 +292,65 @@ form #concerns{
 }
 
 .lessonContent{
-	
 	width: 50%;
 	height: auto;
-	line-height: 36px;
+
+}
+.example{
+text-align: center;
+font-size: 18px;
+border: 1px solid;
+width: 50%
+}
+/*Mobile*/
+@media all and (min-width:450px){
+.lessonContent h2{
+	font-size: 20px;
+	}
+.lessonContent p{
+	font-size: 14px;
+	font-size: 3vw;
+	line-height: 24px;
+}
+.lessonContent ul{
+	font-size: 14px;
+	font-size: 3vw;
+	line-height: 24px;
+}
 	
 }
+/*Tablet*/
+@media all and (min-width:600px){
+.lessonContent h2{
+	font-size: 28px;
+	}
 .lessonContent p{
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 18px;
+}
+.lessonContent ul{
+	
+	font-size: 16px;
+	line-height: 24px;
+}
+
+}
+/*Desktop*/
+@media all and (min-width:900px){
+.lessonContent h2{
+	font-size: 36px;
+	}
+.lessonContent p{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+	line-height: 34px;
+}
+.lessonContent ul{
+	font-size: 20px;
+	line-height: 30px;
+}
 }
 
 .cta{
@@ -320,11 +371,7 @@ form #concerns{
 	height:auto;
 	
 }
-/*
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!QUESTIONABLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-*/
 
 .why h1{
 	text-align: center;
