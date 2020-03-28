@@ -6,6 +6,11 @@
 	Orange: #FF900D,255,144,13;
 	Cyan: #00FFDE 0,255,222;
 */
+*{
+	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 iframe{
 	width: 700px;
 	height:700px;
@@ -49,6 +54,130 @@ h3{
 a{
 	text-decoration: none;
 	color: #E6E6E6;
+}
+
+nav{
+	background-color: #121212;
+	padding: 5px 20px;
+}
+nav ul{
+	list-style-type: none;
+	text-transform: uppercase;
+}
+nav a:hover{
+	color: #14F600;
+ 	text-shadow: 0 5px 15px rgba(20, 246, 0, .8);
+	text-decoration: none;
+ 	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
+.menu li{
+	font-size: 16px;
+	padding: 15px 5px;
+}
+.menu li a{
+	display:block;
+}
+.primary.secondary{
+	border-bottom: 1px #444 solid;
+}
+/*Mobile Menu*/
+.menu{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.toggle{
+	order:1;
+}
+.item.primary-button{
+	order:2;
+}
+.item{
+	width: 100%;
+	text-align: center;
+	order: 3;
+	display: none;
+}
+.item.active{
+	display: block;
+}
+
+.toggle{
+	cursor: pointer;
+}
+.bars{
+	background: #999;
+	display: inline-block;
+	height: 2px;
+	position: relative;
+	width: 18px;
+}
+.bars::before,.bars::after{
+	background: #999;
+	content: "";
+	display: inline-block;
+	height: 2px;
+	position: absolute;
+	width: 18px;
+}
+.bars::before{
+	top:5px;
+}
+.bars::after{
+	top:-5px;
+}
+
+/*Tablet Menu*/
+@media all and (min-width:600px){
+	.menu{
+		justify-content: center;
+	}
+	.logo{
+		flex:1;
+	}
+	.item.primary{
+		width: auto;
+		order: 1;
+		display: block;
+	}
+	
+	.toggle{
+		order: 2;
+	}
+	.primary.secondary{
+		border: 0;
+	}
+	.primary.secondary a{
+		padding: 7px 15px;
+		background: transparent;
+		border: 1px solid #14F600;
+	}
+}
+
+/*Desktop*/
+@media all and (min-width:768px){
+	.item{
+		display:block;
+		width: auto;
+		order: 1;
+	}
+	.toggle{
+		display: none;
+	}
+	.logo{
+		order: 0;
+	}
+	.primary.secondary{
+		order: 2;
+	}
+	.menu li{
+		padding: 15px 10px;
+	}
+	.menu li.primary.secondary{
+		padding-right: 0;
+	}
 }
 
 
@@ -98,50 +227,22 @@ form #concerns{
 }
 
 .toTop{
-	font-size: 36px;
+	width: 75px;
+	font-size: 32px;
+	text-align: center;
 	color: #E6E6E6;
 	text-decoration:none;
 	height: 50px;
-	position:absolute;
-    bottom:0;
-    right:0;
-/*	margin-bottom: 20px;*/
-	padding: 10px;
+	position:fixed;
+	padding: 3px;
+	bottom: 0;
+    right:10px;
 	border: 3px solid #E6E6E6;
 }
 .toTop:hover{
 	box-shadow: 0 5px 15px rgba(255,255,255, .8);
 	transition: all 0.2s ease-in-out;
 	float: right;
-}
-.thumb{
-	float: left;
-	margin-top: 3px;
-	margin-left:5px;
-	width: auto;
-	height: auto;
-	cursor: pointer;
-}
-.navbar{
-	width: auto;
-	height: 34px;
-	font-size: 18px;
-	margin-left:5px;
-	float:left;	
-}
-.navbar ul{
-	float:left;
-}
-.navbar li{
-	position: relative;
-	display: inline;
-	margin-right: 30px;
-	text-transform: uppercase;
-}	
-.navbar li:hover{
-	color:#14F600;
-	text-shadow: 0 5px 15px rgba(20, 246, 0, .8);
-	cursor: pointer;
 }
 
 .container{
@@ -151,7 +252,6 @@ form #concerns{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	border: 2px solid red;
 }
 .centered{
 	width: auto;
@@ -162,12 +262,16 @@ form #concerns{
 	flex-direction: column-reverse;
 }
 .container h1{
+	
 	font-size: 72px;
+	font-size: 4.5vw;
 	text-transform: uppercase;
 }
 
 .container h3{
 	text-transform: uppercase;
+	font-size: 16px;
+	font-size: 1.5vw;
 }
 
 .lessonContainer{
@@ -188,7 +292,7 @@ form #concerns{
 	width: 50%;
 	height: auto;
 	line-height: 36px;
-	border: 1px solid yellow;
+	
 }
 .lessonContent p{
 	margin-left: auto;
@@ -218,19 +322,14 @@ form #concerns{
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!QUESTIONABLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 */
-@media screen and (max-width: 900px) {
-  .why h1 {
-    float: left;
-    clear: both;
-  }
-}
+
 .why h1{
 	text-align: center;
 }
 
 .htmlwhy{
 	width: 498px;
-	height:598px;
+	height:auto;
 	border: 1px solid #00FFDE;
 	line-height: 36px;
 	text-align: center;
@@ -240,12 +339,7 @@ form #concerns{
 	margin-bottom: 5px;
 	float: left;
 }
-@media screen and (max-width: 600px) {
-  .htmlwhy {
-    float: none;
-    clear: both;
-  }
-}
+
 .htmlwhy p{
 	padding: 15px;
 	font-size: 14px;
@@ -258,7 +352,7 @@ form #concerns{
 
 .csswhy{
 	width: 498px;
-	height:598px;
+	height:auto;
 	border: 1px solid #FF19D5;
 	line-height: 36px;
 	text-align: center;
@@ -268,12 +362,7 @@ form #concerns{
 	margin-bottom: 5px;
 	float: left;
 }
-@media screen and (max-width: 1036px) {
-  .csswhy {
-    float: none;
-    clear: both;
-  }
-}
+
 .csswhy p{
 	padding: 15px;
 	font-size: 14px;
