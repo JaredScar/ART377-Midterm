@@ -3,29 +3,15 @@
 ART377 - MIDTERM SITE-->
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Code Current | FAQ</title>
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="styles/styles.css">
 <link rel="stylesheet" href="styles/colors.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 <script src="https://kit.fontawesome.com/9ae88992e0.js" crossorigin="anonymous"></script>
-<script>
-		
-	$(function() {
-		$(".toggle").on("click",function(){
-			
-			if($(".item").hasClass("active")){
-			   	$(".item").removeClass("active");
-			   }
-			else{
-				$(".item").addClass("active");
-			}
-			
-		})
-			
-	
-	});	
-	
-	</script>
+
 </head>
 <body>
 <nav>
@@ -56,6 +42,25 @@ ART377 - MIDTERM SITE-->
 
 <a class="toTop" href="#top"><i class="fas fa-angle-double-up"></i></a>
 </div>
+	
+	<script>
+		
+	$(function() {
+		$(".toggle").on("click",function(){
+			
+			if($(".item").hasClass("active")){
+			   	$(".item").removeClass("active");
+			   }
+			else{
+				$(".item").addClass("active");
+			}
+			
+		})
+			
+	
+	});	
+	
+	</script>
 </body>
 
 </html>

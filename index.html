@@ -2,7 +2,9 @@
 <!-- Alana Caporale
 ART377 - MIDTERM SITE-->
 
-<html><head>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="images/favicon.png"/>
 	<title>The Code Current | HOME</title>
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">	
@@ -24,24 +26,7 @@ ART377 - MIDTERM SITE-->
 	}
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-		
-	$(function() {
-		$(".toggle").on("click",function(){
-			
-			if($(".item").hasClass("active")){
-			   	$(".item").removeClass("active");
-			   }
-			else{
-				$(".item").addClass("active");
-			}
-			
-		})
-			
-	
-	});	
-	
-	</script>
+
 </head>
 <body>
 	
@@ -70,23 +55,23 @@ ART377 - MIDTERM SITE-->
 	</div>
 	
 	<div class="owl-carousel owl-theme">
-    	<div class="item">
+    	<div>
 			<img onclick="window.open('https://stackoverflow.com/questions/tagged/html','_blank')" alt="THE RABBIT HOLE" title="THE RABBIT HOLE" class="img-fluid" src="images/slide1.jpg">
 		</div>
 	
-		<div class="item">
+		<div>
 			<img onclick="window.open('lessons.html','_blank')" alt="LESSONS" title="LESSONS" class="img-fluid" src="images/slide2.jpg">
 		</div>
 			
-		<div class="item">
+		<div>
 			<img onclick="window.open('challenges.html','_blank')" alt="CHALLENGES" title="CHALLENGES" class="img-fluid" src="images/slide3.jpg">
 		</div>
 			
-		<div class="item">
+		<div>
 			<img onclick="window.open('https://acaporale1.github.io/CPU_FCFS/','_blank')" alt="REAL WORLD APPROACH" title="REAL WORLD APPROACH" class="img-fluid" src="images/slide4.jpg">
 		</div>
 			
-		<div class="item">
+		<div>
 			<img onclick="window.open('faq.html','_blank')" alt="FAQ" title="FAQ" class="img-fluid" src="images/slide5.jpg">
 		</div>
 		
@@ -152,7 +137,24 @@ ART377 - MIDTERM SITE-->
 
 
 	</script>
+	<script>
+		
+	$(function() {
+		$(".toggle").on("click",function(){
+			
+			if($(".item").hasClass("active")){
+			   	$(".item").removeClass("active");
+			   }
+			else{
+				$(".item").addClass("active");
+			}
+			
+		})
+			
 	
+	});	
+	
+	</script>
 	
 	
 </body>

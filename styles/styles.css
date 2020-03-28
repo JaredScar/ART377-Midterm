@@ -6,11 +6,7 @@
 	Orange: #FF900D,255,144,13;
 	Cyan: #00FFDE 0,255,222;
 */
-*{
-	box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+
 iframe{
 	width: 700px;
 	height:700px;
