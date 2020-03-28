@@ -67,7 +67,7 @@ ART377 - MIDTERM SITE-->
 	<h1>CODING IN <span class="txtORANGE">2020</span></h1>
 	</div>
 	
-	
+	</div>
 	
 	<div class="owl-carousel owl-theme">
     	<div class="item">
@@ -92,11 +92,8 @@ ART377 - MIDTERM SITE-->
 		
 	</div>
 	
-	<div class="lessonContainer" style="width:75%;flex-direction: row">
-		<div id="customPrevBtn" class="owlNav" style="float: left"><i class="fas fa-chevron-left"></i></div>	
-		<div id="customNextBtn" class="owlNav" style="float: right"><i class="fas fa-chevron-right"></i></div>	
-	</div>
 	
+	<div class="container">
 	<h1>why learn <span class="txtCYAN">html</span>/<span class="txtHPINK">css</span>?</h1>
 	
 	<div class="why">
@@ -115,18 +112,18 @@ ART377 - MIDTERM SITE-->
 	</div>
 
 	
-	<div class="lessonContainer" style="width:60%;border: 1px solid;">
-		<div class="cta">	
-			<h1>Intrigued?</h1>
-			<button onclick="window.location.href='lessons.html'" class ="button">get started</button>
-		</div>	
-	</div>
+	
 	
 	<a class="toTop" href="#top"><i class="fas fa-angle-double-up"></i></a>
 	
 </div> <!--end container-->
-		
-
+<br><br><br>		
+<div class="lessonContainer">
+		<div class="cta">	
+			<h1>Intrigued?</h1>
+			<button onclick="window.location.href='lessons.html'" class ="button">get started</button>
+		</div>	
+</div>
 	
 	
 
@@ -137,39 +134,22 @@ ART377 - MIDTERM SITE-->
 	<script type="text/javascript">
 	$('.owl-carousel').owlCarousel({
     loop:true,
-	
     margin:5,
 	autoplay:true,
     autoplayTimeout:2700,
     autoplayHoverPause:true,
     mouseDrag:false,
+	touchDrag:true,
 	
-	
-   responsive:{
-       0:{
-           items:1
-       },
-       600:{
-           items:1
-       },
-       1000:{
-           items:1
-       }
-   }
+	items : 1, // THIS IS IMPORTANT
+      responsive : {
+            480 : { items : 1  }, // from zero to 480 screen width 4 items
+            768 : { items : 1  }, // from 480 screen widthto 768 6 items
+            1024 : { items : 1   // from 768 screen width to 1024 8 items
+            }
+        },
 })
-	
-var owl = $('.owl-carousel');
-owl.owlCarousel();
-// Go to the next item
-$('#customNextBtn').click(function() {
-    owl.trigger('next.owl.carousel');
-})
-// Go to the previous item
-$('#customPrevBtn').click(function() {
-    // With optional speed parameter
-    // Parameters has to be in square bracket '[]'
-    owl.trigger('prev.owl.carousel', [300]);
-})
+
 
 	</script>
 	

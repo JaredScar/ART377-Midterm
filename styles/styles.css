@@ -22,10 +22,6 @@ iframe{
 	border: 4px dashed;
 }
 
-.owlNav{
-display:inline;
-cursor: pointer;	
-}
 .owlNav:hover{
 color: rgb(20, 246, 0);
 text-shadow: 0 5px 15px rgba(20, 246, 0, .8);
